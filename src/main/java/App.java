@@ -3,7 +3,6 @@ import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 import static spark.Spark.*;
 
-
 public class App {
   static String userOriginalSentence = "";
 
@@ -19,12 +18,11 @@ public class App {
 
     get("/result", (request, response) -> {
       HashMap model = new HashMap();
-      String vowelToUnfold = "";
       WordPuzzle resultDisplayer = new WordPuzzle();
       if (userOriginalSentence.equals("")){
         userOriginalSentence = request.queryParams("userInput");
       }
-      model.put("userOutput" ,resultDisplayer.WordPuzzler(userOriginalSentence,vowelToUnfold));
+      model.put("userOutput" ,resultDisplayer.WordPuzzler(userOriginalSentence));
       model.put("template" ,"templates/result.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
@@ -37,6 +35,5 @@ public class App {
       model.put("template" ,"templates/guessResult.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
-
   }
 }
