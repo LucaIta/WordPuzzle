@@ -10,11 +10,14 @@ _It allow the user to insert a a Word which gets puzzled. A second user can the 
 
 ## Setup/Installation Requirements
 
-* _open the following link with the browser: http://lucaita.github.io/WordPuzzle/
+* _clone the following directory: https://github.com/LucaIta/WordPuzzle
+* _run the Spark Server
+* _open your browser at the page http://localhost:4567/
 
 ## Known Bugs
 
 _it does not check if the input form is empty when the user hit submit_
+_it propose the user to try again guessing the word even when he guess correctly_
 
 ## Support and contact details
 
