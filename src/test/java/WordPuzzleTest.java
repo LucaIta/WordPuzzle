@@ -6,24 +6,24 @@ public class WordPuzzleTest {
   @Test
   public void worldPuzzle_doesItReplacevowelsInSingleWords(){
     WordPuzzle puzzlerTest = new WordPuzzle();
-    assertEquals("H-ll-", puzzlerTest.WorldPuzzler("Hello"));
+    assertEquals("H-ll-", puzzlerTest.WordPuzzler("Hello"));
   }
 
   @Test
   public void worldPuzzle_doesItReplacevowelsTwoWordSentences(){
     WordPuzzle puzzlerTest = new WordPuzzle();
-    assertEquals("H-ll- W-rld", puzzlerTest.WorldPuzzler("Hello World"));
+    assertEquals("H-ll- W-rld", puzzlerTest.WordPuzzler("Hello World"));
   }
 
   @Test
   public void worldPuzzle_doesItReplacevowelsCapitalized(){
     WordPuzzle puzzlerTest = new WordPuzzle();
-    assertEquals("H-ll- W-rld", puzzlerTest.WorldPuzzler("HEllO WOrld"));
+    assertEquals("H-ll- W-rld", puzzlerTest.WordPuzzler("HEllO WOrld"));
   }
 
   @Test
   public void worldPuzzle_doesItCorrectlyCompareOriginalSentenceAndUserGuess(){
     WordPuzzle puzzlerTest = new WordPuzzle();
-    assertEquals(true, puzzlerTest.sentenceChecker("Hello World","Hello World"));
+    assertEquals("you guessed correctly", puzzlerTest.sentenceChecker("Hello World","Hello World"));
   }
 }

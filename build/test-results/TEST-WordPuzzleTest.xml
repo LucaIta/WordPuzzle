@@ -1,66 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordPuzzleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-22T18:51:01" hostname="epicodus-92.local" time="0.003">
+<testsuite name="WordPuzzleTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-04-22T20:48:51" hostname="epicodus-92.local" time="0.001">
   <properties/>
-  <testcase name="worldPuzzle_doesItReplacevowelsCapitalized" classname="WordPuzzleTest" time="0.002"/>
-  <testcase name="worldPuzzle_doesItReplacevowelsTwoWordSentences" classname="WordPuzzleTest" time="0.001"/>
+  <testcase name="worldPuzzle_doesItCorrectlyCompareOriginalSentenceAndUserGuess" classname="WordPuzzleTest" time="0.0"/>
+  <testcase name="worldPuzzle_doesItReplacevowelsCapitalized" classname="WordPuzzleTest" time="0.0"/>
+  <testcase name="worldPuzzle_doesItReplacevowelsTwoWordSentences" classname="WordPuzzleTest" time="0.0"/>
   <testcase name="worldPuzzle_doesItReplacevowelsInSingleWords" classname="WordPuzzleTest" time="0.0"/>
-  <system-out><![CDATA[h
-H
-
-l
-l
-H-
-l
-l
-H-l
- 
- 
-H-ll-
-w
-W
-H-ll- 
-r
-r
-H-ll- W-
-l
-l
-H-ll- W-r
-d
-d
-H-ll- W-rl
-h
-H
-
-l
-l
-H-
-l
-l
-H-l
- 
- 
-H-ll-
-w
-W
-H-ll- 
-r
-r
-H-ll- W-
-l
-l
-H-ll- W-r
-d
-d
-H-ll- W-rl
-h
-H
-
-l
-l
-H-
-l
-l
-H-l
-]]></system-out>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
