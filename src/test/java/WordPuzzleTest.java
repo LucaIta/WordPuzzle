@@ -6,6 +6,12 @@ public class WordPuzzleTest {
   @Test
   public void worldPuzzle_doesItReplacevowelsInSingleWords(){
     WordPuzzle puzzlerTest = new WordPuzzle();
-    assertEquals("H-llo", puzzlerTest.WorldPuzzler("Hello"));
+    assertEquals("H-ll-", puzzlerTest.WorldPuzzler("Hello"));
+  }
+
+  @Test
+  public void worldPuzzle_doesItReplacevowelsTwoWordSentences(){
+    WordPuzzle puzzlerTest = new WordPuzzle();
+    assertEquals("H-ll- W-rld", puzzlerTest.WorldPuzzler("Hello World"));
   }
 }
