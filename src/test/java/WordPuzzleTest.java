@@ -21,4 +21,9 @@ public class WordPuzzleTest {
     assertEquals("H-ll- W-rld", puzzlerTest.WorldPuzzler("HEllO WOrld"));
   }
 
+  @Test
+  public void worldPuzzle_doesItCorrectlyCompareOriginalSentenceAndUserGuess(){
+    WordPuzzle puzzlerTest = new WordPuzzle();
+    assertEquals(true, puzzlerTest.sentenceChecker("Hello World","Hello World"));
+  }
 }
