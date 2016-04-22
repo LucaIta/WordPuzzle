@@ -1,5 +1,3 @@
-// import java.util.Map;
-// import java.util.HashMap;
 import java.io.*;
 import java.util.ArrayList;
 import java.io.Console;
@@ -9,14 +7,13 @@ public class WordPuzzle {
   static Integer counter = 0;
   static ArrayList<String> puzzledSentence = new ArrayList<String>();
 
-
-  // static String testString = "Hello";
-  // ORIGINAL working WorldWordPuzzler
-  public static String WordPuzzler (String userSentence){
+  public static String WordPuzzler (String userSentence, String vowelToKeep){
     String[] vowels = {"a", "e", "i", "o", "u"};
     for (String vowel: vowels){
-      userSentence = userSentence.replace(vowel,"-");
-      userSentence = userSentence.replace(vowel.toUpperCase(),"-");
+      if (vowel != vowelToKeep){ // to remove
+        userSentence = userSentence.replace(vowel,"-");
+        userSentence = userSentence.replace(vowel.toUpperCase(),"-");
+      } // to remove
     }
     return userSentence;
   }

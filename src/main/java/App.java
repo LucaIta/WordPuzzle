@@ -11,6 +11,7 @@ public class App {
     String layout = "templates/layout.vtl";
 
     get("/", (request, responde) -> {
+      userOriginalSentence = "";
       HashMap model = new HashMap();
       model.put("template" ,"templates/home.vtl");
       return new ModelAndView(model, layout);
@@ -18,9 +19,12 @@ public class App {
 
     get("/result", (request, response) -> {
       HashMap model = new HashMap();
+      String vowelToUnfold = "";
       WordPuzzle resultDisplayer = new WordPuzzle();
-      userOriginalSentence = request.queryParams("userInput");
-      model.put("userOutput" ,resultDisplayer.WordPuzzler(userOriginalSentence));
+      if (userOriginalSentence.equals("")){
+        userOriginalSentence = request.queryParams("userInput");
+      }
+      model.put("userOutput" ,resultDisplayer.WordPuzzler(userOriginalSentence,vowelToUnfold));
       model.put("template" ,"templates/result.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
@@ -33,5 +37,6 @@ public class App {
       model.put("template" ,"templates/guessResult.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
   }
 }
