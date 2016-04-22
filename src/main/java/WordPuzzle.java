@@ -8,6 +8,7 @@ import java.util.ArrayList;
       String[] vowels = {"a", "e", "i", "o", "u"};
       for (String vowel: vowels){
         userSentence = userSentence.replace(vowel,"-");
+        userSentence = userSentence.replace(vowel.toUpperCase(),"-");
       }
       return userSentence;
     }

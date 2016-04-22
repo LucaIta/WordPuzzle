@@ -14,4 +14,11 @@ public class WordPuzzleTest {
     WordPuzzle puzzlerTest = new WordPuzzle();
     assertEquals("H-ll- W-rld", puzzlerTest.WorldPuzzler("Hello World"));
   }
+
+  @Test
+  public void worldPuzzle_doesItReplacevowelsCapitalized(){
+    WordPuzzle puzzlerTest = new WordPuzzle();
+    assertEquals("H-ll- W-rld", puzzlerTest.WorldPuzzler("HEllO WOrld"));
+  }
+
 }
