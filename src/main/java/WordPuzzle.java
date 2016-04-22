@@ -22,32 +22,3 @@ public class WordPuzzle {
     return outcome;
   }
 }
-
-// public static String WordPuzzler (String userSentence){
-//   Console myConsole = System.console();
-//   String[] vowels = {"a", "e", "i", "o", "u","y"};
-//   String[] consonants = {"b", "c", "d", "f", "g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","z"," "};
-//   String[] splittedUserSentence = userSentence.split("");
-//   String puzzledSentenceString = "";
-//
-//   for (String letter : splittedUserSentence){
-//
-//       for (String vowel : vowels){
-//         if (letter.contains(vowel) || letter.contains(vowel.toUpperCase())){
-//           puzzledSentence.add("-");
-//           puzzledSentenceString += "-";
-//         }
-//       }
-//       for (String consonant : consonants){
-//         if (letter.contains(consonant) || letter.contains(consonant.toUpperCase())){
-//           puzzledSentence.add(letter);
-//           puzzledSentenceString += letter;
-//         }
-//       }
-//   }
-//   return puzzledSentenceString;
-// }
-
-// public static String vowelDisplayer (letter){
-//   for ()
-// }
